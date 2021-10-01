@@ -134,6 +134,9 @@ select customer_id, max(purch_amt) as 'Max order' from Orders group by customer_
 
 
 
+create view ViewExp
+as
+select * from Salesman;
 
 
 
