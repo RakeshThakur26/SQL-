@@ -13,7 +13,7 @@ create table Customer(customer_id numeric(5) primary key,
 						cust_name varchar(30),
 						city varchar(15),
 						grade numeric(3),
-						salesman_id numeric(5) );
+						salesman_id numeric(5) references Salesman(salesman_id));
 --Creating Orders table
 create table Orders (order_no numeric(5) primary key,
 						purch_amt decimal(8,2),
@@ -138,7 +138,7 @@ create view ViewExp
 as
 select * from Salesman;
 
-
+select * from ViewExp;
 
 select * from Salesman;
 select * from Customer;
